@@ -3,8 +3,10 @@
 <a href="{{ route('productos.create') }}">Nuevo producto</a>
 <a href="{{ route('ventas.index') }}">Ir a ventas</a>
 
-<table border="1" cellpadding="5">
+
+<table border="1" style="border-collapse: collapse;">
     <tr>
+        <td style="padding: 5px;"><tr>
         <th>ID</th>
         <th>Nombre</th>
         <th>Precio</th>
@@ -31,7 +33,11 @@
             </form>
         </td>
     </tr>
-    @endforeach
+    @endforeach</td>
+    </tr>
+</table>
+
+    
 </table>
 
 @if(session('error'))

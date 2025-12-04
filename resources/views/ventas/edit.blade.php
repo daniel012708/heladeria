@@ -7,7 +7,7 @@
     Producto:
     <select name="producto_id">
         @foreach($productos as $p)
-            <option value="{{ $p->id }}" 
+            <option value="{{ $p->id }}">
                 @if($venta->producto_id == $p->id) selected @endif>
                 {{ $p->nombre }} - ${{ $p->precio }}
             </option>
